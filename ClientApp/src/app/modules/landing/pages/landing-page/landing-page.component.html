@@ -1,0 +1,71 @@
+<div class="landing">
+    <nav class="navbar">
+        <div class="row">
+          <div class="navbar__logo col-lg-12">
+            <a [routerLink]="['/home/start/' + languageName]">
+              <img class="logo-img" src="/assets/images/pwc-logo.png">
+            </a>
+            <a>
+              <div class="brand-name"><span>|</span><span>Freelancer marketplace</span></div>
+            </a>
+            <div class="flag-container">
+              <a *ngIf="languageName != 'en'" [routerLink]="['/home/start/en']"><img class="lang-flag" src="/assets/images/landing/UK.jpg"></a>
+              <a *ngIf="languageName == 'en'" [routerLink]="['/home/start/ru']"><img class="lang-flag" src="/assets/images/landing/ru.png"></a>
+            </div>
+<!--            <a href="javascript:" class="mobile-options ripple light" (click)="toggleHeaderNavRight()">
+              <i class="icon-more"></i>
+            </a>-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="navbar__login col-lg-12">
+              <form ngNativeValidate>
+                <input class="form-control"
+                       type="email" name="userName" data-placement="bottom"
+                       data-content="The Email Address or PwC GUID is required."
+                       [placeholder]="'HEADER.EMAIL' | translate" autocomplete="off" required>
+
+                <input type="password" name="userPassword" data-placement="bottom"
+                       data-content="The password is required."
+                       class="form-control password-input ng-pristine ng-untouched ng-valid ng-empty" [placeholder]="'HEADER.PASSWORD' | translate">
+
+                <button type="button" class="btn pwc-sec-btn" translate>HEADER.SIGN_IN</button>
+<!--                <button type="submit" class="btn pwc-sec-btn" translate>HEADER.FORGOT_PASSWORD</button>-->
+              </form>
+            </div>
+          </div>
+    </nav>
+    <div class="pcoded-main-container">
+      <div class="pcoded-wrapper">
+        <div class="pcoded-inner-content custom-main-container">
+          <div class="pcoded-inner-content">
+
+            <!-- Main-body start -->
+            <div class="main-body">
+              <router-outlet></router-outlet>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="footer">
+  <div class="footer__container">
+    <div class="col-sm-12">
+      <p>&copy; {{year}} {{ 'FOOTER.P_TEXT.TEXT' | translate }}</p>
+      <p>
+        <a [routerLink]="['/home/personal-data/' + languageName]" translate>
+          FOOTER.P_PERSONAL_DATA
+        </a>
+        <br>
+        <a [routerLink]="['/home/cookie/' + languageName]" translate>
+          FOOTER.P_COOKIE
+        </a>
+        <br/>
+        <a [routerLink]="['/home/contact']" class="contact-form">
+          Contact Us
+        </a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,102 @@
+@import 'variables';
+
+.landing {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1375px;
+  padding: 0 40px;
+
+  .navbar {
+    display: block;
+    padding-top: 12px;
+
+    &__logo {
+      display: flex;
+      align-items: flex-end;
+      width: 400px;
+      padding: 0 60px;
+      margin-bottom: 5px;
+
+      img {
+        width: 69px;
+      }
+
+      .brand-name {
+        text-transform: capitalize;
+        text-decoration: none;
+        font: 16px georgia, sans-serif;
+        color: #404041;
+
+        span {
+          margin-left: 18px;
+        }
+      }
+
+      .flag-container {
+        padding-left: 4%;
+
+        img {
+          width: 20px;
+          border: 1px solid $black;
+        }
+      }
+    }
+
+    &__login {
+      width: 100%;
+      background-color: $color-gray;
+      height: 53px;
+
+      form {
+        display: flex;
+        height: 53px;
+        align-items: center;
+        justify-content: flex-end;
+
+        .form-control {
+          margin-left: 20px;
+          border-color: $border-color;
+          font-size: 14px;
+          border-radius: 2px;
+          max-width: 100%;
+          box-shadow: none !important;
+          height: 33px;
+          width: 185px;
+        }
+
+        button {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: $color-dark-gray;
+  color: white;
+  min-height: 140px;
+  padding: 20px 0;
+  position: absolute;
+  width: 100%;
+
+  &__container {
+    max-width: 1375px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+
+    .col-sm-12 {
+      padding-left: 0;
+    }
+    
+    p {
+      font-size: 12px;
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
