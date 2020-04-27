@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CommonService} from '../../../../core/services/common.service';
 
 @Component({
   selector: 'app-landing-page',
@@ -10,7 +11,14 @@ export class LandingPageComponent implements OnInit {
   model = {};
   year: number = new Date().getFullYear();
 
-  constructor() {}
+  constructor(private commonService: CommonService) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.get();
+  }
+
+  get() {
+    return this.commonService.get();
+  }
 }

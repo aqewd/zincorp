@@ -16,8 +16,8 @@ export class AppComponent implements OnInit, OnDestroy {
     private router: Router,
     private route: ActivatedRoute
   ) {
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang('ru');
+    translate.use('ru');
   }
 
   ngOnDestroy(): void {}
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit, OnDestroy {
       )
       .subscribe((routeData) => {
         const titleDetail = routeData.title ? `${routeData.title}` : '';
-        this.titleService.setTitle(`${titleDetail} | PwC`);
+        this.titleService.setTitle(`${titleDetail}`);
       });
   }
 }
