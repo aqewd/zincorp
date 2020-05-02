@@ -1,0 +1,12 @@
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.deps.json
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.csprojAssemblyReference.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.AssemblyInfoInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.AssemblyInfo.cs
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.runtimeconfig.json
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.runtimeconfig.dev.json
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.genruntimeconfig.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.csproj.CoreCompileInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.DAL\obj\Debug\netcoreapp3.1\ZinCorp.DAL.pdb

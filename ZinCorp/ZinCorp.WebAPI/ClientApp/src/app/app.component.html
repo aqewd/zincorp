@@ -1,1 +1,57 @@
-<router-outlet></router-outlet>
+<nz-layout>
+  <nz-header>
+    <div class="header">
+      <ul class="category-list" nz-menu nzTheme="dark" nzMode="horizontal">
+        <li nz-menu-item>nav 1</li>
+        <li nz-menu-item>nav 2</li>
+        <li nz-menu-item>nav 3</li>
+      </ul>
+      <div>
+        <button nz-button
+                nzType="dashed"
+                nz-popover
+                [nzPopoverTitle]="'MAIN.LOGIN_FORM.TITLE' | translate"
+                [(nzVisible)]="visible"
+                nzPopoverTrigger="click"
+                nzPopoverPlacement="bottom"
+                (nzVisibleChange)="change($event)"
+                [nzPopoverContent]="loginTemplate"
+                [nzGhost]="true">{{'MAIN.SIGN_IN' | translate}}
+        </button>
+      </div>
+    </div>
+  </nz-header>
+  <nz-content>
+    <div class="inner-content">
+      <router-outlet></router-outlet>
+    </div>
+  </nz-content>
+  <nz-footer></nz-footer>
+</nz-layout>
+
+<ng-template #loginTemplate>
+  <form nz-form [formGroup]="loginForm" class="login-form" (ngSubmit)="submitForm()">
+    <nz-form-item>
+      <nz-form-control [nzErrorTip]="'MAIN.LOGIN_FORM.USER_NAME_REQUIRED' | translate">
+        <nz-input-group nzPrefixIcon="user">
+          <input type="text" nz-input formControlName="userName" [placeholder]="'MAIN.LOGIN_FORM.USER_NAME_PLACEHOLDER' | translate" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+      <nz-form-control [nzErrorTip]="'MAIN.LOGIN_FORM.PASSWORD_REQUIRED' | translate">
+        <nz-input-group nzPrefixIcon="lock">
+          <input type="password" nz-input formControlName="password" [placeholder]="'MAIN.LOGIN_FORM.PASSWORD_PLACEHOLDER' | translate" />
+        </nz-input-group>
+      </nz-form-control>
+    </nz-form-item>
+    <div nz-row class="login-form-margin">
+      <div nz-col [nzSpan]="24">
+        <label nz-checkbox formControlName="remember">
+          <span translate>MAIN.LOGIN_FORM.REMEMBER_ME</span>
+        </label>
+      </div>
+    </div>
+    <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">{{'MAIN.SIGN_IN' | translate}}</button>
+  </form>
+</ng-template>

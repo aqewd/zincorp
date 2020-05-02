@@ -1,0 +1,17 @@
+<nz-card nzHoverable [nzCover]="coverTemplate">
+  <nz-card-meta [nzTitle]="titleTemplate" [nzDescription]="product.description"></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
+  <nz-carousel [nzDotRender]="dotTemplate" [nzAutoPlay]="true" [nzEffect]="effect">
+    <div nz-carousel-content *ngFor="let image of product.productImages">
+      <img class="product-image" [alt]="image.name" [src]="image.base64" />
+    </div>
+    <ng-template #dotTemplate>
+      <button class="dot"></button>
+    </ng-template>
+  </nz-carousel>
+</ng-template>
+<ng-template #titleTemplate>
+  {{product.name}} <br/> <nz-rate [nzDisabled]="true" [ngModel]="product.rate" nzAllowHalf></nz-rate>
+</ng-template>
+

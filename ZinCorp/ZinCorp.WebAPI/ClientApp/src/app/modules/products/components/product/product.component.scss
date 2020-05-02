@@ -1,0 +1,28 @@
+@import "variables";
+
+[nz-carousel-content] {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: $color-white;
+  color: $color-white;
+  overflow: hidden;
+}
+
+.product-image {
+  max-width: 290px;
+}
+
+nz-card {
+  width: 300px;
+}
+
+nz-carousel {
+  height: 330px;
+  padding: 5px;
+  border-bottom: 1px solid $color-gray;
+}
+
+.dot {
+  background-color: $color-dark-gray !important;
+}

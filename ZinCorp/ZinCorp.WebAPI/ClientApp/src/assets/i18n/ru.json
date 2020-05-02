@@ -1,3 +1,14 @@
 {
-
+  "MAIN": {
+    "SIGN_IN": "Войти",
+    "LOGIN_FORM": {
+      "TITLE": "Введите логин и пароль",
+      "USER_NAME_PLACEHOLDER": "Имя пользователя",
+      "PASSWORD_PLACEHOLDER": "Пароль",
+      "USER_NAME_REQUIRED": "Введите имя пользователя",
+      "PASSWORD_REQUIRED": "Введите пароль",
+      "FORGOT_PASSWORD": "Забыли пароль?",
+      "REMEMBER_ME": "Запомнить меня"
+    }
+  }
 }

@@ -1,0 +1,14 @@
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BL.deps.json
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BL.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BL.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.DAL.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.csprojAssemblyReference.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.csproj.CoreCompileInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.AssemblyInfoInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.AssemblyInfo.cs
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.csproj.CopyComplete
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BE.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BE.pdb

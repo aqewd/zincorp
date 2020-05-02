@@ -1,9 +1,15 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.SpaServices.AngularCli;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ZinCorp.BL.Customers;
+using ZinCorp.BL.Products;
+using ZinCorp.DAL;
+using ZinCorp.WebAPI.Configuration;
 
 namespace ZinCorp.WebAPI
 {
@@ -19,13 +25,26 @@ namespace ZinCorp.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var mappingConfig = new MapperConfiguration(mc =>
+            {
+                mc.AddProfile(new MappingProfile());
+            });
+
+            var mapper = mappingConfig.CreateMapper();
+            services.AddSingleton(mapper);
+
             // In production, the Angular files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
                 configuration.RootPath = "ClientApp/dist";
             });
 
+            services.AddDbContext<DBContext>(item => item.UseSqlServer(Configuration.GetConnectionString("ZinCorp")));
             services.AddControllers();
+            services.AddScoped<DBContext>();
+
+            services.AddScoped<ICustomersBL, CustomersBL>();
+            services.AddScoped<IProductsBL, ProductsBL>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

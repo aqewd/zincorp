@@ -1,18 +1,1 @@
 @import 'variables';
-
-.pwc-sec-btn {
-  background-color: $pwc-orange;
-  border: none;
-  border-radius: 0;
-  color: $white;
-  outline: none;
-  font-size: 13px;
-  width: 140px;
-  height: 33px;
-  line-height: 13px;
-}
-
-.pwc-sec-btn:hover {
-  color: $white;
-  background-color: $pwc-orange-tint-1;
-}

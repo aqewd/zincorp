@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 @NgModule({
   declarations: [],
@@ -13,9 +14,17 @@ import { TranslateModule } from '@ngx-translate/core';
     ReactiveFormsModule,
     RouterModule,
     HttpClientModule,
-    TranslateModule
+    TranslateModule,
+    NgZorroAntdModule
   ],
-  exports: [CommonModule, FormsModule, ReactiveFormsModule, RouterModule, TranslateModule],
+  exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule,
+    TranslateModule,
+    NgZorroAntdModule
+  ],
   providers: [DecimalPipe]
 })
 export class SharedModule {}
