@@ -1,6 +1,7 @@
 {
   "MAIN": {
     "SIGN_IN": "Войти",
+    "SIGN_OUT": "Выйти",
     "LOGIN_FORM": {
       "TITLE": "Введите логин и пароль",
       "USER_NAME_PLACEHOLDER": "Имя пользователя",

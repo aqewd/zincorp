@@ -5,14 +5,16 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZinCorp.WebAPI", "ZinCorp.WebAPI\ZinCorp.WebAPI.csproj", "{DC3A6D2A-721B-48CD-8BE9-3A55D71D3767}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZinCorp.DAL", "ZinCorp.DAL\ZinCorp.DAL.csproj", "{83FE059D-E1A6-42D9-9E52-39C9E11B28E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZinCorp.DAL", "ZinCorp.DAL\ZinCorp.DAL.csproj", "{83FE059D-E1A6-42D9-9E52-39C9E11B28E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZinCorp.BL", "ZinCorp.BL\ZinCorp.BL.csproj", "{5A285A72-53F7-48BC-B8EA-0A70D8B4634C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZinCorp.BL", "ZinCorp.BL\ZinCorp.BL.csproj", "{5A285A72-53F7-48BC-B8EA-0A70D8B4634C}"
 	ProjectSection(ProjectDependencies) = postProject
 		{83FE059D-E1A6-42D9-9E52-39C9E11B28E5} = {83FE059D-E1A6-42D9-9E52-39C9E11B28E5}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZinCorp.BE", "ZinCorp.BE\ZinCorp.BE.csproj", "{B8044A89-E0A2-495C-9210-4C6F12E763DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZinCorp.BE", "ZinCorp.BE\ZinCorp.BE.csproj", "{B8044A89-E0A2-495C-9210-4C6F12E763DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZinCorp.Common", "ZinCorp.Common\ZinCorp.Common.csproj", "{A470090D-EAB5-4016-BCFF-B8B30ED602F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +38,10 @@ Global
 		{B8044A89-E0A2-495C-9210-4C6F12E763DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B8044A89-E0A2-495C-9210-4C6F12E763DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B8044A89-E0A2-495C-9210-4C6F12E763DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A470090D-EAB5-4016-BCFF-B8B30ED602F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A470090D-EAB5-4016-BCFF-B8B30ED602F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A470090D-EAB5-4016-BCFF-B8B30ED602F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A470090D-EAB5-4016-BCFF-B8B30ED602F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

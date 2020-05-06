@@ -18,7 +18,7 @@ namespace ZinCorp.DAL.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("ZinCorp.DAL.Models.Customer", b =>
+            modelBuilder.Entity("ZinCorp.DAL.Models.DbCustomer", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,18 +34,30 @@ namespace ZinCorp.DAL.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("HashPassword")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("LastName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Login")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Salt")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.ToTable("Customers");
                 });
 
-            modelBuilder.Entity("ZinCorp.DAL.Models.Product", b =>
+            modelBuilder.Entity("ZinCorp.DAL.Models.DbProduct", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -69,7 +81,7 @@ namespace ZinCorp.DAL.Migrations
                     b.ToTable("Products");
                 });
 
-            modelBuilder.Entity("ZinCorp.DAL.Models.ProductImage", b =>
+            modelBuilder.Entity("ZinCorp.DAL.Models.DbProductImage", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
@@ -92,9 +104,9 @@ namespace ZinCorp.DAL.Migrations
                     b.ToTable("ProductImages");
                 });
 
-            modelBuilder.Entity("ZinCorp.DAL.Models.ProductImage", b =>
+            modelBuilder.Entity("ZinCorp.DAL.Models.DbProductImage", b =>
                 {
-                    b.HasOne("ZinCorp.DAL.Models.Product", "Product")
+                    b.HasOne("ZinCorp.DAL.Models.DbProduct", "Product")
                         .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)

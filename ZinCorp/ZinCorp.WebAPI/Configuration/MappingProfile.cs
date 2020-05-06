@@ -10,6 +10,7 @@ namespace ZinCorp.WebAPI.Configuration
         {
             CreateMap<DbProduct, Product>().ReverseMap();
             CreateMap<DbProductImage, ProductImage>().ReverseMap();
+            CreateMap<DbCustomer, Customer>().ReverseMap();
         }
     }
 }

@@ -24,4 +24,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ZinCorp.BE\ZinCorp.BE.csproj" />
+  </ItemGroup>
+
 </Project>

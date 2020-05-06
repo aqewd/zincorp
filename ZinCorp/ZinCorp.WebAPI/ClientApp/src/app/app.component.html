@@ -7,7 +7,7 @@
         <li nz-menu-item>nav 3</li>
       </ul>
       <div>
-        <button nz-button
+        <button *ngIf="!isLogged" nz-button
                 nzType="dashed"
                 nz-popover
                 [nzPopoverTitle]="'MAIN.LOGIN_FORM.TITLE' | translate"
@@ -17,6 +17,11 @@
                 (nzVisibleChange)="change($event)"
                 [nzPopoverContent]="loginTemplate"
                 [nzGhost]="true">{{'MAIN.SIGN_IN' | translate}}
+        </button>
+        <button *ngIf="isLogged" nz-button
+                nzType="dashed"
+                (click)="logOut()"
+                [nzGhost]="true">{{'MAIN.SIGN_OUT' | translate}}
         </button>
       </div>
     </div>

@@ -1,0 +1,9 @@
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\bin\Debug\netcoreapp3.1\ZinCorp.Common.deps.json
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\bin\Debug\netcoreapp3.1\ZinCorp.Common.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\bin\Debug\netcoreapp3.1\ZinCorp.Common.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.csprojAssemblyReference.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.csproj.CoreCompileInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.AssemblyInfoInputs.cache
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.AssemblyInfo.cs
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.Common\obj\Debug\netcoreapp3.1\ZinCorp.Common.pdb

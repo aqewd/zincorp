@@ -12,3 +12,5 @@ C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.dll
 C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\obj\Debug\netcoreapp3.1\ZinCorp.BL.pdb
 C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BE.dll
 C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.BE.pdb
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.Common.dll
+C:\n0thing\zincorp\ZinCorp\ZinCorp.BL\bin\Debug\netcoreapp3.1\ZinCorp.Common.pdb

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ZinCorp.BE\ZinCorp.BE.csproj" />
+    <ProjectReference Include="..\ZinCorp.Common\ZinCorp.Common.csproj" />
     <ProjectReference Include="..\ZinCorp.DAL\ZinCorp.DAL.csproj" />
   </ItemGroup>
 

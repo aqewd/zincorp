@@ -3,7 +3,8 @@ import { Title } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, map, mergeMap } from 'rxjs/operators';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AuthService } from './core/services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -19,10 +20,19 @@ export class AppComponent implements OnInit, OnDestroy {
     private titleService: Title,
     private router: Router,
     private route: ActivatedRoute,
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private authService: AuthService
   ) {
     translate.setDefaultLang('ru');
     translate.use('ru');
+  }
+
+  get isLogged(): boolean {
+    return this.authService.isLoggedIn;
+  }
+
+  logOut(): void {
+    this.authService.logout();
   }
 
   ngOnDestroy(): void {}
@@ -62,7 +72,12 @@ export class AppComponent implements OnInit, OnDestroy {
       }
       return;
     }
-    this.visible = false;
+    const { userName, password } = this.loginForm.getRawValue();
+    this.authService.auth(userName, password).subscribe((res) => {
+      if (res != null) {
+        this.visible = false;
+      }
+    });
   }
 
   change(event) {
